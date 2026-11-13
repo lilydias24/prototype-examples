@@ -1,30 +1,31 @@
-# Prototype examples
+# LogicMind — protótipo de interface
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Protótipo navegável da interface do **Tutor Inteligente para Dedução Natural**, meu
+projeto de tutor que verifica provas formalmente e explica, em linguagem natural, por que
+um passo falhou. Este protótipo serviu para validar a experiência do estudante antes da
+especificação do sistema; os dados das telas são fictícios e não há backend.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/emillydias2408-3546s-projects/v0-prototype-examples)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/mMkqTJ6XSWj)
+## Telas
 
-## Overview
+| Tela | O que mostra |
+| --- | --- |
+| Início | Visão geral do progresso, atividade recente e atalhos |
+| Trilha e módulos | Exercícios organizados em trilhas de dificuldade crescente |
+| Lição / prática | Editor de prova passo a passo, com premissas, conclusão e XP do exercício |
+| Painel de regras | Regras de inferência com detalhes ao clicar |
+| Assistente IA | Área de feedback explicando o erro do passo |
+| Árvore de dependência | Como cada linha da prova depende das anteriores |
+| Revisão de erros | Erros pendentes e resolvidos e a taxa de melhoria |
+| Conquistas | Gamificação do progresso |
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Stack
 
-## Deployment
+Next.js 16 · React 19 · TypeScript · Tailwind CSS · componentes shadcn/ui. Gerado e
+iterado no [v0](https://v0.app).
 
-Your project is live at:
+## Como rodar
 
-**[https://vercel.com/emillydias2408-3546s-projects/v0-prototype-examples](https://vercel.com/emillydias2408-3546s-projects/v0-prototype-examples)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/mMkqTJ6XSWj](https://v0.app/chat/mMkqTJ6XSWj)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+pnpm install
+pnpm dev   # http://localhost:3000
+```
